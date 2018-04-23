@@ -1,0 +1,10 @@
+@for(var i = 0; i < 5000; i++) {
+    <div>
+        Select @(i.ToString("D3"))
+        <select>
+            @for(var j = 0; j < 20; j++) {
+                <option>Option @(j.ToString("D3"))</option>
+            }
+        </select>
+    </div>
+}
